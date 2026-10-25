@@ -12,3 +12,6 @@ jobs:
      - uses: actions/checkout@v7
      - name: List the files 
      - run: ls
+     - name: Good bye
+     - run: echo "hiiii"
+     
