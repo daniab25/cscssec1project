@@ -2,16 +2,19 @@ name: CI
 
 on: push
 
-jobs: 
+jobs:
   check:
-   runs-on: ubuntu-latest
-   steps:
-     - name: Say hello
-     - run: echo "Hello from GitHub Actions"
-     - name: Get the code 
-     - uses: actions/checkout@v7
-     - name: List the files 
-     - run: ls
-     - name: Good bye
-     - run: echo "hiiii"
-     
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions"
+
+      - name: Get the code
+        uses: actions/checkout@v7
+
+      - name: List the files
+        run: ls
+
+      - name: Good bye
+        run: echo "hiiii"
